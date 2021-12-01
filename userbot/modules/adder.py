@@ -37,7 +37,7 @@ async def get_chatinfo(event):
             return None
         except ChannelPrivateError:
             await event.reply(
-                "`Böyle bir olduğuna eminmisin banlanmış olabilirsin.`"
+                "`Böyle bir grup olduğuna eminmisin banlanmış olabilirsin.`"
             )
             return None
         except ChannelPublicGroupNaError:
@@ -74,12 +74,12 @@ async def get_users(event):
     f = 0
     error = "None"
 
-    await erdem.edit("**Owen UserBot ADDER**\n\n`Üyeler Ekleniyor...`")
+    await erdem.edit("**sefiller UserBot ADDER**\n\n`Üyeler Ekleniyor...`")
     async for user in event.client.iter_participants(farid.full_chat.id):
         try:
             if error.startswith("Too"):
                 return await erdem.edit(
-                    f"**Owen UserBot ADDER**\n `Spamdasınız Galiba Emin Olmak İçin .sinfo Yazarak Kontrol Edebilirsiniz.` \nHata \n`{error}` \n\n `{s}` Üyeler Eklendi.\n `{f}` Kullanıcı Eklenemedi."
+                    f"**sefiller UserBot ADDER**\n `Spamdasınız Galiba Emin Olmak İçin .sinfo Yazarak Kontrol Edebilirsiniz.` \nHata \n`{error}` \n\n `{s}` Üyeler Eklendi.\n `{f}` Kullanıcı Eklenemedi."
                 )
             await event.client(
                 functions.channels.InviteToChannelRequest(channel=chat, users=[user.id])
@@ -92,5 +92,5 @@ async def get_users(event):
             error = str(e)
             f = f + 1
     return await erdem.edit(
-        f"**Owen UserBot ADDER** \n\nBaşarılı İşlem: ✔️ `{s}` .\nBaşarısız İşlem: ❌ `{f}`"
+        f"**sefiller UserBot ADDER** \n\nBaşarılı İşlem: ✔️ `{s}` .\nBaşarısız İşlem: ❌ `{f}`"
     )
