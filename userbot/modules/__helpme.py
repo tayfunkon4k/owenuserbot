@@ -4,10 +4,10 @@
 # you may not use this file except in compliance with the License.
 #
 
-# OwenUserBot - ErdewBey - Midy
+# SefillerUserBot - TRCUMHURBASKANI - SefilleronlineTR
 
 # @Qulec tarafından yazılmıştır.
-# Thanks @Spechide.
+# Thanks @SefillerOnlineTR.
 
 from userbot import BOT_USERNAME
 from userbot.events import register
