@@ -1,4 +1,4 @@
-# OwenProjects Erdem Bey ByMisakimey
+# Sefiller TRCUMHURBASKANI sefilleronlinetr
 
 import os
 import re
@@ -99,4 +99,4 @@ async def get_user(event):
     
 @register(incoming=True, from_users=SUDO_ID, pattern="^.salive$")
 async def _(q):
-    await q.client.send_message(q.chat_id,"`Sudom ❤️ OwenUserBot Çalışıyor...`")
+    await q.client.send_message(q.chat_id,"`Sudom ❤️ SefillerUserBot Çalışıyor...`")
