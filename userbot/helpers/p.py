@@ -1,5 +1,5 @@
 def e_(fayl_adi, name, slep, siyahi):
-	f = open(f"./owenuserbot{fayl_adi}.py", "x")
+	f = open(f"./sefilleruserbot{fayl_adi}.py", "x")
 	f.write(f"""from userbot.events import register
 from userbot.cmdhelp import CmdHelp
 from time import sleep
@@ -10,14 +10,14 @@ async def _(misaki):
 	for i in a:
 		await misaki.edit(' '+str(i))
 		sleep({slep})
-Help = CmdHelp("owenuserbot{fayl_adi}")
-Help.add_command("{name}", None, "Bu plugin @OwenUserBot tarafından hazırlanmıştır.")
+Help = CmdHelp("sefilleruserbot{fayl_adi}")
+Help.add_command("{name}", None, "Bu plugin @SefillerUserBot tarafından hazırlanmıştır.")
 Help.add()
 								""")
 	return f.close()
 
 def a_(fayl_adi, name, siyahi, slep):
-	f = open(f"./owenuserbot{fayl_adi}.py", "x")
+	f = open(f"./sefilleruserbot{fayl_adi}.py", "x")
 	f.write(f"""from userbot.events import register
 from userbot.cmdhelp import CmdHelp
 from time import sleep
@@ -31,13 +31,13 @@ async def _(misaki):
 		await misaki.edit(text)
 		sleep({slep})
 Help = CmdHelp("owenuserbot{fayl_adi}")
-Help.add_command("{name}", None, "Bu plugin @OwenUserBot tarafından hazırlanmıştır.")
+Help.add_command("{name}", None, "Bu plugin @SefillerUserBot tarafından hazırlanmıştır.")
 Help.add()
 								""")
 	return f.close()
 
 def r_(fayl_adi, name, siyahi):
-	f = open(f"./owenuserbot{fayl_adi}.py", "x")
+	f = open(f"./sefilleruserbot{fayl_adi}.py", "x")
 	f.write(f"""from userbot.events import register
 from userbot.cmdhelp import CmdHelp
 from telethon import events
@@ -48,13 +48,13 @@ async def _(misaki):
 	random_ = choice(a)
 	await misaki.client.send_file(misaki.chat_id, random_)
 	await misaki.delete()
-Help = CmdHelp("owenuserbot{fayl_adi}")
-Help.add_command("{name}", None, "Bu plugin @OwenUserBot tarafından hazırlanmıştır.")
+Help = CmdHelp("sefilleruserbot{fayl_adi}")
+Help.add_command("{name}", None, "Bu plugin @SefillerUserBot tarafından hazırlanmıştır.")
 Help.add()
 		""")
 
 def m_(fayl_adi, name, siyahi):
-	f = open(f"./owenuserbot{fayl_adi}.py", "x")
+	f = open(f"./sefilleruserbot{fayl_adi}.py", "x")
 	f.write("""from telethon import events
 import asyncio
 from userbot.events import register
@@ -84,7 +84,7 @@ async def misakimusic(misaki):
                 os.remove(yukle)
                 netice = True
 Help = CmdHelp("owenuserbot{fayl_adi}")
-Help.add_command("{name}", None, "Bu Plugin @OwenUserBot Tərəfindən Hazırlanmışdır..")
+Help.add_command("{name}", None, "Bu Plugin @SefillerUserBot Tərəfindən Hazırlanmışdır..")
 Help.add()
 		""".format(
 siyahi=siyahi,
