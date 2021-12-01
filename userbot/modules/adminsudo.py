@@ -4,11 +4,11 @@
 # you may not use this file except in compliance with the License.
 #
 
-# OwenUserBot - ErdewBey - ByMisakiMey - Midy
+# SefillerUserBot - TRCUMHURBASKANI - SefillerOnlineTR - TAYFUNBEYY
 #
 
 """
-OwenUserBot
+SefillerUserBot
 """
 
 from asyncio import sleep
