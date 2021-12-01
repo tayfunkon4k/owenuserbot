@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# OwenUserBot - ErdewBey - Midy - ByMisakiMey
+# SefillerUserBot - TRCUMHURBASKANI - SEFİLLER - SefillerOnlineTR
 #
 
 """ UserBot yardım komutu """
@@ -17,13 +17,13 @@ from userbot.events import register
 # ██████ LANGUAGE CONSTANTS ██████ #
 
 from userbot.language import get_value
-LANG = get_value("__owen")
+LANG = get_value("__sefiller")
 
 # ████████████████████████████████ #
 
-@register(outgoing=True, pattern="^.owen(?: |$)(.*)")
+@register(outgoing=True, pattern="^.sefiller(?: |$)(.*)")
 async def owen(event):
-    """ .owen komutun """
+    """ .sefiller komutun """
     args = event.pattern_match.group(1).lower()
     if args:
         if args in CMD_HELP:
