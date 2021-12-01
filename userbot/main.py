@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# Owen UserBot - ErdewBey - ByMisakiMey
+# Sefiller UserBot - TRCUMHURBASKANI - SefillerOnlineTR
 
 """ UserBot başlangıç noktası """
 import importlib
@@ -30,12 +30,12 @@ import userbot.cmdhelp
 import glob
 
 ALIVE_MSG = [
-    "`Userbotunuz çalışıyor ve sana bişey demek istiyor.. Seni seviyorum` **{owensahip}** ❤️ \n Bot Versiyonu: {owen} ",
-    "🎆 `Endişelenme! Seni yanlız bırakmam.` **{owensahip}**, `OwenUserbot çalışıyor.` \n Bot Versiyonu: {owen} ",
-    "`⛈️ Elimden gelenin en iyisini yapmaya hazırım`, **{owensahip}** \n Bot Versiyonu: {owen} ",
-    "✨ `OwenUserBot sahibinin emirlerine hazır...` \n Bot Versiyonu: {owen} ",
-    "`Şuan en gelişmiş userbotun düzenlediği mesajı okuyor olmalısın` **{owensahip}**. \n Bot Versiyonu: {owen} ",
-    "`Benimi Aramıştın ❓ Ben Buradayım Merak Etme` \n Bot Versiyonu: {owen} "
+    "`Userbotunuz çalışıyor ve sana bişey demek istiyor.. Seni seviyorum` **{sefillersahip}** ❤️ \n Bot Versiyonu: {sefiller} ",
+    "🎆 `Endişelenme! Seni yanlız bırakmam.` **{sefillersahip}**, `SefillerUserbot çalışıyor.` \n Bot Versiyonu: {sefiller} ",
+    "`⛈️ Elimden gelenin en iyisini yapmaya hazırım`, **{sefillersahip}** \n Bot Versiyonu: {sefiller} ",
+    "✨ `SefillerUserBot sahibinin emirlerine hazır...` \n Bot Versiyonu: {sefiller} ",
+    "`Şuan en gelişmiş userbotun düzenlediği mesajı okuyor olmalısın` **{sefillersahip}**. \n Bot Versiyonu: {sefiller} ",
+    "`Benimi Aramıştın ❓ Ben Buradayım Merak Etme` \n Bot Versiyonu: {sefiller} "
 ]
 
 DIZCILIK_STR = [
@@ -88,12 +88,12 @@ KICKME_MSG = [
 ]
 
 CV_MSG = [
-    "**{DEFAULT_NAME}** `Fazla Bi Bilgi Ayarlamamış Ama Şunu Biliyorum Kendisi Baya Zevkli Birisi Çünkü Owen Userbot Kullanıyor.` 😁",
+    "**{DEFAULT_NAME}** `Fazla Bi Bilgi Ayarlamamış Ama Şunu Biliyorum Kendisi Baya Zevkli Birisi Çünkü Sefiller Userbot Kullanıyor.` 😁",
     "`Üzgünüm sana vercek bir bilgim yok.`"
 ]
 
 
-UNAPPROVED_MSG = ("`Hey olduğun yerde kal,!👨‍💻 Ben Owen. Endişelenme!\n\n`"
+UNAPPROVED_MSG = ("`Hey olduğun yerde kal,!👨‍💻 Ben Sefiller. Endişelenme!\n\n`"
                   "`Sahibim sana mesaj atma izni vermedi o yüzden sahibim seni onaylayana kadar bu mesajı alacaksın.. `"
                   "`Lütfen sahibimin aktif olmasını bekleyin, o genellikle PM'leri onaylar.\n\n`"
                   "`Bildiğim kadarıyla o kafayı yemiş insanlara PM izni vermiyor.`")
@@ -178,7 +178,7 @@ try:
     idim = bot.get_me().id
     owenbl = requests.get('https://raw.githubusercontent.com/erdewbey/datas/master/blacklist.json').json()
     if idim in owenbl:
-        bot.send_message("me", f"`❌ Owen yöneticileri sizi bottan yasakladı! Bot kapatılıyor...`")
+        bot.send_message("me", f"`❌ Sefiller yöneticileri sizi bottan yasakladı! Bot kapatılıyor...`")
         LOGS.error("Owen yöneticileri sizi bottan yasakladı! Bot kapatılıyor...")
         bot.disconnect()
     # ChromeDriver'ı Ayarlayalım #
@@ -279,12 +279,12 @@ if BOT_TOKEN:
 os.system("clear")
 
 LOGS.info("+===========================================================+")
-LOGS.info("|                     ✨Owen Userbot✨                       |")
+LOGS.info("|                     ✨SEFİLLER Userbot✨                       |")
 LOGS.info("+==============+==============+==============+==============+")
 LOGS.info("|                                                            |")
 LOGS.info("Botunuz çalışıyor! Herhangi bir sohbete .alive yazarak Test edin."
-          " Yardıma İhtiyacınız varsa, Destek grubumuza gelin t.me/OwenSupport")
-LOGS.info(f"Bot versiyonunuz: Owen ==> {OWEN_VERSION}")
+          " Yardıma İhtiyacınız varsa, Destek grubumuza gelin t.me/SefillerOnlineTR")
+LOGS.info(f"Bot versiyonunuz: Sefiller ==> {OWEN_VERSION}")
 
 """
 if len(argv) not in (1, 3, 4):
