@@ -86,7 +86,7 @@ async def get_users(event):
             )
             s = s + 1
             await erdem.edit(
-                f"**Owen UserBot ADDER**\n\n`{s}` Üyeler Eklendi.\n`{f}` Kullanıcı Eklenemedi \n\n**Hata:** `{error}`"
+                f"**sefiller UserBot ADDER**\n\n`{s}` Üyeler Eklendi.\n`{f}` Kullanıcı Eklenemedi \n\n**Hata:** `{error}`"
             )
         except Exception as e:
             error = str(e)
