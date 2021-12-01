@@ -1,5 +1,5 @@
 # my friend Marina(ru) 
-# OwenUserBot OwenProjects 
+# SefillerUserBot TRCUMHURBASKANI 
 from io import BytesIO
 from random import choice, randint
 from textwrap import wrap
